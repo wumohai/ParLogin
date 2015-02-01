@@ -13,6 +13,7 @@ public class MainLogin {
 		
 		LoginInterface loginInterface = new LoginImplement();
 		String addrString = "http://127.0.0.1:9001/";
+		
 		// wsdl http://127.0.0.1:9001/LoginImp?wsdl
 		Endpoint.publish(addrString + "LoginImp", loginInterface);
 		System.out.println("Login publish succ, Addr: " + addrString);
